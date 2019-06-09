@@ -41,14 +41,18 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-img {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    height: auto;
-    overflow: hidden;
-    padding: 10px;
-}
-.content-box {
+
+#photos {
     column-count: 3;
+    line-height: 5px;
+    column-gap: 5px;
+}
+
+#photos img {
+    /* display: inline-block; */
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    /* padding: 10px; */
 }
