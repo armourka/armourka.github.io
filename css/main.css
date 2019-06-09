@@ -44,7 +44,7 @@ ul.posts li {
 
 #photos {
     column-count: 2;
-    /* line-height: 5px; */
+    line-height: 0px;
     column-gap: 10px;
 }
 
@@ -55,4 +55,15 @@ ul.posts li {
     height: auto;
     /* overflow: hidden; */
     padding: 5px;
+}
+
+#photos img:hover {
+    /* display: inline-block; */
+    /* position: relative; */
+    /* width: 100%; */
+    /* height: auto; */
+    /* overflow: hidden; */
+    border-color: gray;
+    /* padding: 5px; */
+
 }
