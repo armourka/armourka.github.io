@@ -41,3 +41,11 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+.img {
+    display: inline-block;
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    overflow: hidden;
+    padding: 10000px;
+}
