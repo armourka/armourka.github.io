@@ -49,3 +49,6 @@ img {
     overflow: hidden;
     padding: 10px;
 }
+.content-box {
+    column-count: 3;
+}
