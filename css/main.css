@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -45,7 +45,7 @@ ul.posts li {
 #photos {
     column-count: 2;
     /* line-height: 5px; */
-    column-gap: 0px;
+    column-gap: 10px;
 }
 
 #photos img {
@@ -54,5 +54,5 @@ ul.posts li {
     width: 100%;
     height: auto;
     /* overflow: hidden; */
-    padding: 10px;
+    padding: 5px;
 }
