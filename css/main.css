@@ -44,7 +44,7 @@ ul.posts li {
 img {
     display: inline-block;
     position: relative;
-    width: 100px;
+    width: 50%;
     height: auto;
     overflow: hidden;
     padding: 10px;
