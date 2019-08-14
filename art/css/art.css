@@ -1,14 +1,6 @@
-.img {
-    display: inline-block;
-    position: relative;
-    max-width: 50%;
-    height: auto;
-    overflow: hidden;
-    padding: 10000px;
-}
 body {
     margin: 60px auto;
-    /* width: 70%; */
+    width: 90%;
 }
 nav {
     width: 150px;
