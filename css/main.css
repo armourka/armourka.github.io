@@ -54,6 +54,6 @@ ul.posts li {
 /* } */
 
 
-#photos img {
-    width: 100%;
+#photos {
+    background-image: url("background.jpg");
 }
