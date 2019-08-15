@@ -46,6 +46,14 @@ ul.posts li {
     list-style: none;
 }
 
-img {
+
+/* #photos { */
+    /* column-count: 2; */
+    /* line-height: 0px; */
+    /* column-gap: 10px; */
+/* } */
+
+
+#photos img {
     width: 100%;
 }
