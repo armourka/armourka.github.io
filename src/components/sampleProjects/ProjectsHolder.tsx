@@ -35,7 +35,7 @@ export const ProjectsHolder: React.FC = () => {
   return (
     <Box sx={{ margin: '0 auto', width: '100%' }}>
       <Card sx={{ margin: 'auto', marginTop: '20px', p: 2 }}>
-        <Tabs value={tab} onChange={handleTabChange}>
+        <Tabs value={tab} onChange={handleTabChange} variant="scrollable">
           <Tab label="Form Submission" />
           <Tab label="Data Viewer" />
           <Tab label="Product Catalog" />

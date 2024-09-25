@@ -84,82 +84,83 @@ export const FormSubmission: React.FC = () => {
       {submitted ? (
         <Submitted />
       ) : (
-        <Card variant="outlined">
-          <CardContent>
-            <FormControl>
-              <Box
-                component="form"
-                sx={{
-                  '& .MuiTextField-root': { m: 1 },
-                }}
-                autoComplete="off"
-                display="flex"
-                flexDirection="column"
-                gap={2}
-              >
-                <TextField
-                  required
-                  label="Name"
-                  variant="standard"
-                  onChange={handleUpdateName}
-                ></TextField>
-                <TextField
-                  required
-                  label="Email Address"
-                  variant="standard"
-                  onChange={handleUpdateEmail}
-                ></TextField>
-
-                <TextField
-                  select
-                  id="product-select"
-                  value={product}
-                  label="Product Purchased"
-                  onChange={handleChange}
+        <Box sx={{ display: 'flex' }}>
+          <Card variant="outlined">
+            <CardContent>
+              <FormControl>
+                <Box
+                  component="form"
+                  sx={{
+                    '& .MuiTextField-root': { m: 1 },
+                  }}
+                  autoComplete="off"
+                  display="flex"
+                  flexDirection="column"
+                  gap={2}
                 >
-                  {PRODUCTS_LIST.map((item, idx) => (
-                    <MenuItem value={item} key={idx}>
-                      {item}
-                    </MenuItem>
-                  ))}
-                </TextField>
+                  <TextField
+                    required
+                    label="Name"
+                    variant="standard"
+                    onChange={handleUpdateName}
+                  ></TextField>
+                  <TextField
+                    required
+                    label="Email Address"
+                    variant="standard"
+                    onChange={handleUpdateEmail}
+                  ></TextField>
 
-                <FormGroup>
-                  <InputLabel>
-                    Please rate your experience using this site
-                  </InputLabel>
-                  <Box sx={{ marginTop: '1rem', display: 'flex' }}>
-                    <CustomRating
-                      name="experience-rating"
-                      value={rating}
-                      onChange={handleChangeRating}
-                    />
-                    <FormHelperText sx={{ ml: 2 }}>
-                      {ratingLabels[rating]}
-                    </FormHelperText>
-                  </Box>
-                </FormGroup>
-                <FormGroup>
-                  <InputLabel>
-                    How likely are you to recommend these services to a friend?
-                  </InputLabel>
-                  <Box sx={{ marginTop: '1rem', display: 'flex' }}>
-                    <CustomRating
-                      name="recommendation-rating"
-                      value={recScore}
-                      onChange={handleChangeRecScore}
-                    />
-                    <FormHelperText sx={{ ml: 2 }}>
-                      {recScoreLabels[recScore]}
-                    </FormHelperText>
-                  </Box>
-                </FormGroup>
+                  <TextField
+                    select
+                    id="product-select"
+                    value={product}
+                    label="Product Purchased"
+                    onChange={handleChange}
+                  >
+                    {PRODUCTS_LIST.map((item, idx) => (
+                      <MenuItem value={item} key={idx}>
+                        {item}
+                      </MenuItem>
+                    ))}
+                  </TextField>
 
-                <Button onClick={handleSubmitForm}>Submit</Button>
-              </Box>
-            </FormControl>
-          </CardContent>
-        </Card>
+                  <FormGroup>
+                    <div>Please rate your experience using this site</div>
+                    <Box sx={{ marginTop: '1rem', display: 'flex' }}>
+                      <CustomRating
+                        name="experience-rating"
+                        value={rating}
+                        onChange={handleChangeRating}
+                      />
+                      <FormHelperText sx={{ ml: 2 }}>
+                        {ratingLabels[rating]}
+                      </FormHelperText>
+                    </Box>
+                  </FormGroup>
+                  <FormGroup>
+                    <div>
+                      How likely are you to recommend these services to a
+                      friend?
+                    </div>
+                    <Box sx={{ marginTop: '1rem', display: 'flex' }}>
+                      <CustomRating
+                        name="recommendation-rating"
+                        value={recScore}
+                        onChange={handleChangeRecScore}
+                      />
+                      <FormHelperText sx={{ ml: 2 }}>
+                        {recScoreLabels[recScore]}
+                      </FormHelperText>
+                    </Box>
+                  </FormGroup>
+
+                  <Button onClick={handleSubmitForm}>Submit</Button>
+                </Box>
+              </FormControl>
+            </CardContent>
+          </Card>
+        </Box>
       )}
     </Fragment>
   )

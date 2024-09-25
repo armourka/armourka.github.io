@@ -9,7 +9,7 @@ import { ProjectsHolder } from '../components/sampleProjects/ProjectsHolder'
 export const SampleProjects: React.FC = () => {
   return (
     <Page>
-      <Box sx={{ margin: 'auto', marginTop: '20px', width: '75%' }}>
+      <Box sx={{ margin: 'auto', marginTop: '20px' }}>
         <Typography>
           These front-end demo pages are intended to give you an idea of what I
           can build to support your business needs. Don't limit your
