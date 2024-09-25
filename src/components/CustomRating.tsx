@@ -14,43 +14,25 @@ const StyledRating = styled(Rating)(({ theme }) => ({
 }));
 
 const customIcons: {
-  [index: string]: {
-    icon: React.ReactElement;
-    label: string;
-  };
+  [index: string]: React.ReactElement;
+
 } = {
-  1: {
-    icon: <SentimentVeryDissatisfiedIcon color="error" sx={{ fontSize: 30 }} />,
-    label: 'Very Dissatisfied',
-  },
-  2: {
-    icon: <SentimentDissatisfiedIcon color="error" sx={{ fontSize: 30 }} />,
-    label: 'Dissatisfied',
-  },
-  3: {
-    icon: <SentimentSatisfiedIcon color="warning" sx={{ fontSize: 30 }} />,
-    label: 'Neutral',
-  },
-  4: {
-    icon: <SentimentSatisfiedAltIcon color="success" sx={{ fontSize: 30 }} />,
-    label: 'Satisfied',
-  },
-  5: {
-    icon: <SentimentVerySatisfiedIcon color="success" sx={{ fontSize: 30 }} />,
-    label: 'Very Satisfied',
-  },
+  1: <SentimentVeryDissatisfiedIcon color="error" sx={{ fontSize: 30 }} />,
+  2: <SentimentDissatisfiedIcon color="error" sx={{ fontSize: 30 }} />,
+  3: <SentimentSatisfiedIcon color="warning" sx={{ fontSize: 30 }} />,
+  4: <SentimentSatisfiedAltIcon color="success" sx={{ fontSize: 30 }} />,
+  5: <SentimentVerySatisfiedIcon color="success" sx={{ fontSize: 30 }} />,
 };
 
 function IconContainer(props: IconContainerProps) {
   const { value, ...other } = props;
-  return <span {...other} >{customIcons[value].icon}</span>;
+  return <span {...other} >{customIcons[value]}</span>;
 }
 
 export default function CustomRating(props: RatingProps) {
   return (
     <StyledRating
       IconContainerComponent={IconContainer}
-      getLabelText={(value: number) => customIcons[value].label}
       value={props.value}
       onChange={props.onChange}
       highlightSelectedOnly
