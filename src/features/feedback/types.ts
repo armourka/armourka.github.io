@@ -1,4 +1,4 @@
-import { SUBMIT_FEEDBACK } from "./actionTypes";
+import { SUBMIT_FEEDBACK } from './actionTypes'
 
 interface SubmitFeedbackAction {
   type: typeof SUBMIT_FEEDBACK

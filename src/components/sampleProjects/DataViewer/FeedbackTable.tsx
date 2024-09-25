@@ -1,18 +1,20 @@
-import React from "react"
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { FeedbackSubmission } from '../../../features/feedback/types';
+import React from 'react'
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell from '@mui/material/TableCell'
+import TableContainer from '@mui/material/TableContainer'
+import TableHead from '@mui/material/TableHead'
+import TableRow from '@mui/material/TableRow'
+import Paper from '@mui/material/Paper'
+import { FeedbackSubmission } from '../../../features/feedback/types'
 
 interface FeedbackTableProps {
   data: FeedbackSubmission[]
 }
-export const FeedbackTable: React.FC<FeedbackTableProps> = (props: FeedbackTableProps) => {
-  const { data } = props;
+export const FeedbackTable: React.FC<FeedbackTableProps> = (
+  props: FeedbackTableProps
+) => {
+  const { data } = props
   return (
     <TableContainer component={Paper}>
       <Table>
@@ -43,4 +45,3 @@ export const FeedbackTable: React.FC<FeedbackTableProps> = (props: FeedbackTable
     </TableContainer>
   )
 }
-

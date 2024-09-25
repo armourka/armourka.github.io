@@ -1,17 +1,17 @@
-import React from 'react';
-import { Box, Card, Tabs, Tab, Typography } from '@mui/material';
-import { DataViewer } from './DataViewer/DataViewer';
-import { FormSubmission } from './FormSubmission/FormSubmission';
-import { ProductCatalog } from './ProductCatalog/ProductCatalog';
+import React from 'react'
+import { Box, Card, Tabs, Tab, Typography } from '@mui/material'
+import { DataViewer } from './DataViewer/DataViewer'
+import { FormSubmission } from './FormSubmission/FormSubmission'
+import { ProductCatalog } from './ProductCatalog/ProductCatalog'
 
 interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
+  children?: React.ReactNode
+  index: number
+  value: number
 }
 
 const TabPanel = (props: TabPanelProps) => {
-  const { children, value, index, ...other } = props;
+  const { children, value, index, ...other } = props
   return (
     <div
       role="tabpanel"
@@ -20,22 +20,17 @@ const TabPanel = (props: TabPanelProps) => {
       aria-labelledby={`tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          {children}
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
-  );
+  )
 }
 
 export const ProjectsHolder: React.FC = () => {
-  const [tab, setTab] = React.useState(0);
-
+  const [tab, setTab] = React.useState(0)
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
-    setTab(newValue);
-  };
+    setTab(newValue)
+  }
 
   return (
     <Box sx={{ margin: '0 auto', width: '100%' }}>
@@ -56,5 +51,5 @@ export const ProjectsHolder: React.FC = () => {
         </TabPanel>
       </Card>
     </Box>
-  );
+  )
 }

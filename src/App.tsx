@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline'
 
 import { Navbar } from './components/Navbar'
 import { About } from './pages/About'
 import { Home } from './pages/Home'
 import { ThemeProvider } from '@emotion/react'
-import { theme } from './theme';
-import { SampleProjects } from './pages/SampleProjects';
-import { Contact } from './pages/Contact';
+import { theme } from './theme'
+import { SampleProjects } from './pages/SampleProjects'
+import { Contact } from './pages/Contact'
 
 const App: React.FC = () => {
   return (

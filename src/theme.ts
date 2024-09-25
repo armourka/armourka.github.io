@@ -1,15 +1,12 @@
-
-import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#cc00ff' // purple
-
+      main: '#cc00ff', // purple
     },
     secondary: {
       main: '#00ff00', //Lime
-
     },
     // defaults:
     // background: {
@@ -34,41 +31,38 @@ const darkTheme = createTheme({
     //   light: "#f3e5f5",
     //   main: "#ce93d8"
     // },
-
   },
-  //Colors to add in: 
+  //Colors to add in:
   // Lime: #00ff00
   // Purple: #cc00ff
 
   //overrides
   typography: {
     h1: {
-      fontFamily: 'Sixtyfour'
+      fontFamily: 'Sixtyfour',
     },
     allVariants: {
-      fontFamily: 'Source Code Pro'
-    }
+      fontFamily: 'Source Code Pro',
+    },
     // fontFamily: [
     //   'Sixtyfour'
     // ].join(','),
   },
   components: {
     MuiButton: {
-      defaultProps: {
-
-      },
+      defaultProps: {},
       styleOverrides: {
         root: {
           borderRadius: 0,
-        }
-      }
+        },
+      },
     },
     //didnt work but IMO should've
     // MuiInputBase: {
     //   styleOverrides: {
     //     root: {
     //       borderRadius: 0,
-    //     }, 
+    //     },
     //   }
     // },
     //no
@@ -76,7 +70,7 @@ const darkTheme = createTheme({
     //   styleOverrides: {
     //     root: {
     //       borderRadius: 0,
-    //     }, 
+    //     },
     //   }
     // },
     //yes? i'm so confused it worked for a sec but isnt now
@@ -85,25 +79,22 @@ const darkTheme = createTheme({
         root: {
           borderRadius: 0,
         },
-      }
-    }
-
-  }
-});
+      },
+    },
+  },
+})
 const demoTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#cc00ff' // purple
-
+      main: '#cc00ff', // purple
     },
     secondary: {
       main: '#00ff00', //Lime
-
-    }
-  }
+    },
+  },
 })
-export const defaultTheme = responsiveFontSizes(demoTheme);
+export const defaultTheme = responsiveFontSizes(demoTheme)
 export const theme = responsiveFontSizes(darkTheme)
 
 // console.log(darkTheme)

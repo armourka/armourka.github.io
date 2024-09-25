@@ -1,24 +1,23 @@
 import React from 'react'
 
 // import { NavLink } from 'react-router-dom'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import CssBaseline from '@mui/material/CssBaseline'
 // import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
+import Drawer from '@mui/material/Drawer'
+import IconButton from '@mui/material/IconButton'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
+import MenuIcon from '@mui/icons-material/Menu'
+import Toolbar from '@mui/material/Toolbar'
 // import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { NavLink, useNavigate } from 'react-router-dom';
+import Button from '@mui/material/Button'
+import { NavLink, useNavigate } from 'react-router-dom'
 
-
-const drawerWidth = 240;
+const drawerWidth = 240
 const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About', path: 'about' },
@@ -27,11 +26,11 @@ const navItems = [
 ]
 
 export const Navbar: React.FC = () => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const navigate = useNavigate();
+  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const navigate = useNavigate()
   const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+    setMobileOpen((prevState) => !prevState)
+  }
 
   // Mobile navbar
   const drawer = (
@@ -50,17 +49,20 @@ export const Navbar: React.FC = () => {
         ))}
       </List>
     </Box>
-  );
+  )
 
   // Main Navbar
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{
-        backgroundImage: "none",
-        backgroundColor: "transparent",
-        boxShadow: 0
-      }} >
+      <AppBar
+        component="nav"
+        sx={{
+          backgroundImage: 'none',
+          backgroundColor: 'transparent',
+          boxShadow: 0,
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -82,23 +84,18 @@ export const Navbar: React.FC = () => {
           <Box sx={{ flexGrow: 1 }}></Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Box
-                key={item.label}
-                component={Button}
-                sx={{ color: '#fff' }}
-              >
+              <Box key={item.label} component={Button} sx={{ color: '#fff' }}>
                 {/* todo: make this better, add active style that
                 corresponds to theme */}
                 <NavLink
                   to={item.path}
                   style={({ isActive }) => ({
                     color: isActive ? '#cc00ff' : '#fff',
-                    textDecoration: 'none'
+                    textDecoration: 'none',
                   })}
                 >
                   {item.label}
                 </NavLink>
-
               </Box>
             ))}
           </Box>
@@ -115,7 +112,10 @@ export const Navbar: React.FC = () => {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -160,4 +160,4 @@ export const Navbar: React.FC = () => {
     </Box> */}
     </Box>
   )
-};
+}

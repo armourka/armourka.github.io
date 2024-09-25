@@ -2,8 +2,7 @@ import React, { Fragment } from 'react'
 // import Counter from '../components/counter/Counter'
 import { Box, Fade, Toolbar, Typography } from '@mui/material'
 import { Ascii } from '../components/Ascii'
-import rose from '../assets/rose';
-
+import rose from '../assets/rose'
 
 export const Home: React.FC = () => {
   return (
@@ -28,17 +27,21 @@ export const Home: React.FC = () => {
       </Box> */}
 
       {/* Option 2: let them overlap */}
-      <Box sx={{
-        width: '75%',
-        // padding: '20px 10px',
-        margin: '0px auto',
-        // marginTop: '2rem',
-        position: 'relative'
-      }}>
+      <Box
+        sx={{
+          width: '75%',
+          // padding: '20px 10px',
+          margin: '0px auto',
+          // marginTop: '2rem',
+          position: 'relative',
+        }}
+      >
         <Box sx={{ position: 'absolute', top: '25%' }}>
-          <Typography variant="h1" >k_armour</Typography>
+          <Typography variant="h1">k_armour</Typography>
           {/* <Typography variant="h2">web developer</Typography> */}
-          <Typography variant="body1">web developer seeking full-time or freelance employment </Typography>
+          <Typography variant="body1">
+            web developer seeking full-time or freelance employment{' '}
+          </Typography>
         </Box>
         <Box sx={{ position: 'relative', left: '40%', color: '#00ff00' }}>
           <Ascii formattedText={rose} />

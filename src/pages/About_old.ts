@@ -1,5 +1,5 @@
 // // dead code, old About page implementation with
-// // accordion style sections, Fade sections, etc. 
+// // accordion style sections, Fade sections, etc.
 
 // import React from 'react'
 // // import { useNavigate } from 'react-router-dom'
@@ -50,12 +50,12 @@
 //         <p>
 //         My name is Katherine Armour. I have 4+ years of experience as a full-stack
 //         developer and have worked for companies big and small. I have a passion for frontend development and for making
-//         even complex projects look elegant and simple. 
+//         even complex projects look elegant and simple.
 //         </p>
 //         <p>
 //         I love to build things from scratch, and fix things that are broken. This is true in my software development as
 //         well as my hobbies - I am also passionate about organic gardening, automotive repair, and community service. I
-//         made the switch to freelancing in 2023 to better balance all of the things I care about. 
+//         made the switch to freelancing in 2023 to better balance all of the things I care about.
 //         </p>
 //         <p>
 //         Support me on this journey by hiring me for your next project!
@@ -70,7 +70,7 @@
 //         Download my resume
 //         </p>
 //       </Box>
-//       {/* Actually, scrap all the resume repeater stuff. 
+//       {/* Actually, scrap all the resume repeater stuff.
 //       Write a good paragraph about who you are and a link to download your resume
 //       (contact info removed)
 
@@ -78,11 +78,11 @@
 
 //       My name is Katherine Armour. I have > 4 years of experience as a full-stack
 //       developer and have worked for companies big and small. I have a passion for frontend development and for making
-//       even complex projects look elegant and simple. 
+//       even complex projects look elegant and simple.
 
 //       I love to build things from scratch, and fix things that are broken. This is true in my software development as
 //       well as my hobbies - I am also passionate about organic gardening, automotive repair, and community service. I
-//       made the switch to freelancing in 2023 to better balance all of the things I care about. 
+//       made the switch to freelancing in 2023 to better balance all of the things I care about.
 
 //       Support me on this journey by hiring me for your next project!
 
@@ -92,8 +92,6 @@
 //       Download my resume
 
 //        */}
-
-
 
 //       {/* <CollapsableSection title="Experience">
 //         <ContentLine></ContentLine>
