@@ -119,8 +119,8 @@ export const FormSubmission: React.FC = () => {
                     onChange={handleChange}
                   >
                     {PRODUCTS_LIST.map((item, idx) => (
-                      <MenuItem value={item} key={idx}>
-                        {item}
+                      <MenuItem value={item.title} key={idx}>
+                        {item.title}
                       </MenuItem>
                     ))}
                   </TextField>

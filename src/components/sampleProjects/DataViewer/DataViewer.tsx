@@ -52,7 +52,7 @@ export const DataViewer: React.FC = () => {
         Site Analytics
       </Typography>
 
-      <Grid container spacing={3} sx={{ margin: '2 2' }}>
+      <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           <AnalyticsTile variant="outlined">
             <CardContent>
