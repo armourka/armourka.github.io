@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import CssBaseline from '@mui/material/CssBaseline'
 
 import { Navbar } from './components/Navbar'
@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <div className="container">
           <Routes>
@@ -24,7 +24,7 @@ const App: React.FC = () => {
             {/* <Route path="/contact" element={<Contact/>} /> */}
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   )
 }
